@@ -32,5 +32,7 @@ class TestDummyLockSimple {
   static void test() {
     DummyLock l = new DummyLock();
     l.unlock();
+    ReentrantLock rl = new ReentrantLock();
+    rl.unlock();
   }
 }
