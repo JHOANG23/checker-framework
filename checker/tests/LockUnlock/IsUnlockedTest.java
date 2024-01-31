@@ -3,11 +3,11 @@ import java.util.concurrent.locks.*;
 
 class IsUnlockedTest {
   static void test() {
-    Lock testLock = new ReentrantLock();
+    ReentrantLock testLock = new ReentrantLock();
     try {
-      //      testLock.lock();
+      testLock.lock();
     } finally {
-      //      testLock.unlock();
+      testLock.unlock();
     }
   }
 }
